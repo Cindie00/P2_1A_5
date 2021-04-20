@@ -4,6 +4,16 @@ conn = sqlite3.connect('Chinook_Sqlite.sqlite')
 cursor = conn.cursor()
 # Utilisation de la base de données
 
+cursor.execute('''INSERT INTO animaux_velages VALUES insert_animaux_velages.sql''')
+cursor.execute('''INSERT INTO animaux_types VALUES insert_animaux_types.sql''')
+cursor.execute('''INSERT INTO animaux VALUES insert_animaux.sql''')
+cursor.execute('''INSERT INTO complications VALUES insert_complications.sql''')
+cursor.execute('''INSERT INTO complications VALUES insert_complications.sql''')
+cursor.execute('''INSERT INTO familles VALUES insert_familles.sql''')
+cursor.execute('''INSERT INTO types VALUES insert_types.sql''')
+cursor.execute('''INSERT INTO velages_complications VALUES insert_velages_complications.sql''')
+cursor.execute('''INSERT INTO velages VALUES insert_velages.sql''')
+
 
 cursor.execute('''CREATE TABLE animaux(
   id               INT PRIMARY KEY     NOT NULL,
