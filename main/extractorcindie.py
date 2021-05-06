@@ -5,8 +5,8 @@
 ##########################################################################
 
 import sqlite3
-baseDeDonnees = sqlite3.connect('Base2.db')
-cursor= baseDeDonnees.cursor()
+conn = sqlite3.connect('Base2.db')
+cursor= conn.cursor()
 
 ##4.2.##
 
