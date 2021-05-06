@@ -54,5 +54,5 @@ def TotalDeVachesVivantesParFamille():
     VachesVivantes[famille]= int(TotalDeVachesDansFamille().values()) - int(TotalDeVachesMortesParFamille().values())
   return VachesVivantes
 
-
+conn.close()
 
