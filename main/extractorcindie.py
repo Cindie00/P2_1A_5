@@ -5,7 +5,7 @@
 ##########################################################################
 
 import sqlite3
-conn = sqlite3.connect('Base.sqlite')
+conn = sqlite3.connect('Base.sqlite',check_same_thread=False)
 cursor= conn.cursor()
 
 ##4.2.##
@@ -53,6 +53,6 @@ def TotalDeVachesVivantesParFamille():
   for famille in TotalDeVachesDansFamille().keys():
     VachesVivantes[famille]= int(TotalDeVachesDansFamille().values()) - int(TotalDeVachesMortesParFamille().values())
   return VachesVivantes
-
+conn.commit()
 conn.close()
 
