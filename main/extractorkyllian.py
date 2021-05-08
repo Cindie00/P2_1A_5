@@ -18,3 +18,7 @@ def totalveauxmortnes():
     for ligne in cursor.execute("SELECT animaux_id, animaux.mort_ne, velages.date from animaux INNER JOIN velages ON animaux.id = velages.id WHERE animaux.mort_ne <>'8';"):
         nombre_mort_nes[ligne[2][3:5]]+=1
     return render_templates('graphiques/kyllian.html', data=nombre_mort_nes)
+
+
+conn.commit()
+conn.close()
