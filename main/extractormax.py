@@ -3,7 +3,7 @@
 
 
 import sqlite3
-conn = sqlite3.connect('Base2.db')
+conn = sqlite3.connect('Base.sqlite')
 cursor = conn.cursor()
 
 def Pourcentages():
