@@ -4,7 +4,7 @@
 #
 #####################################################################
 import sqlite3
-baseDeDonnees = sqlite3.connect('Base2.db')
+baseDeDonnees = sqlite3.connect('Base.sqlite')
 cursor= baseDeDonnees.cursor()
 
 # Total de veaux mort-nés par mois
