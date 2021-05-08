@@ -34,7 +34,7 @@ app.debug = True
 #Route vers la page principale du site
 #
 
-@app.route("/LaFermeDes3Chenes")
+@app.route("/")
 def principal():
     '''
     pre:/
