@@ -5,8 +5,8 @@
 #########################################################################################################@
 
 import sqlite3
-with sqlite3.connect("Base.sqlite") as conn:
-    cursor=conn.cursor()
+conn = sqlite3.connect('Base.sqlite')
+cursor= conn.cursor()
     data=list(cursor.execute("SELECT mere_id, date FROM velages"))
     
 def Velage():
@@ -36,3 +36,7 @@ def Velage():
                 annee[a][i]=0
         
      return annee #on renvoie le dictionnaire avec les données du nombre de velages par an
+
+
+conn.commit()
+conn.close()
