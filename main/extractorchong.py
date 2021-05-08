@@ -5,7 +5,7 @@
 #########################################################################################################@
 
 import sqlite3
-with sqlite3.connect("Base2.db") as conn:
+with sqlite3.connect("Base.sqlite") as conn:
     cursor=conn.cursor()
     data=list(cursor.execute("SELECT mere_id, date FROM velages"))
     
