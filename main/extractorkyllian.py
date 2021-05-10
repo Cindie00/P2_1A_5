@@ -21,4 +21,4 @@ def totalveauxmortnes():
 
 
 conn.commit()
-conn.close()
+
