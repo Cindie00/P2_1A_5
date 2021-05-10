@@ -39,4 +39,4 @@ def Velage():
 
 
 conn.commit()
-conn.close()
+
